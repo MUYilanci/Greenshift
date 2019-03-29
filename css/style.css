@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../images/bamboe.jpg');
+}
+
+* {
+    font-family: Poppins-Regular;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/bamboe.jpg");
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+
+/*html, body {margin: 0; height: 100%; overflow: hidden}*/
+
+.modal-color{
+    color: #000000
+}
+
+.navbar-xs {
+    min-height:22px;
+    border-radius:0
+}
+
+.navbar-xs .navbar-brand{
+    padding: 2px 8px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.navbar-xs .navbar-nav > li > a {
+    border-right:1px solid #ddd;
+    padding-top: 2px; padding-bottom: 2px;
+    line-height: 16px
+}
+
+.container-b {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 1em;
+    min-height: 90vh;
+}
+.container-modal {
+    background:rgba(255,255,255, 0.9);
+    padding: 1em;
+    text-align: center;
+}
+.button1 {
+    color: white;
+}
+
+.button1:hover {
+    color: darkgrey;
+}
+
+.settings {
+    color: orange;
+}
+
+.settings:hover {
+    color: darkorange;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.delete {
+    color: darkred;
+}
+
+.bl-gr {
+    background-color: dimgrey;
+}
+
+.btn-width {
+    min-width: 10em;
+    height: 2.7em;
+}
+
+.right {
+    float: right;
+}
+
+.margin-r {
+    margin-right: 1em;
+}
+
+.hours {
+    margin: 1em;
+}
+
+.checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox.nolabel {
+    padding: 0.4em 0.6em;
+}
+
+.checkbox input {
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    max-height: 0 !important;
+    max-width: 0 !important;
+    border: none !important;
+}
+
+.checkbox span {
+    top: -0.6em;
+    left: 0;
+    position: absolute;
+    padding: 0.7em;
+    border: 0.15em solid #bfbebe;
+    background-color: white;
+}
+
+.checkbox span:hover {
+    background-color: #e9e9e9;
+}
+
+.checkbox span::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 0.35em;
+    height: 0.9em;
+    border: solid #ffa355;
+    border-width: 0 0.2em 0.2em 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    left: 0.4em;
+}
+
+.checkbox input:focus ~ span {
+    border: 0.15em solid #3e87e7;
+}
+
+.checkbox input:checked ~ span::after {
+    display: block;
+}
